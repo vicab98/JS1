@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <script type="text/javascript" src="file.js"></script> 
+<style>
+#list{
+  width: 500px;
+  font-size: xx-large;
+  
+}
+
+#myInput{
+  width: 500px;
+  height: 50px;
+  display: flex;
+}
+
+li{
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 500px;
+  height:  50px;
+  background-color: orange;
+  font-size: x-large;
+  border-color: violet;
+  border: solid 2px;
+}
+
+li:hover{
+  background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <div id="list" >
+      <label for="myInput">TO DO:</label>
+      <input type="text" name="myInput" id="myInput" placeholder="Add To Do Item">
+      <button type="text" id="add" onclick="addTodo()">ADD</button>
+      <button type="text" id="clear" onclick="clearTodos()">CLEAR</button>
+    </div>
+    <div id="sect">
+    <ul id="todo-list">
+      <li>Work on JS projects</li>
+    </ul>
+  </div>
+</body>
